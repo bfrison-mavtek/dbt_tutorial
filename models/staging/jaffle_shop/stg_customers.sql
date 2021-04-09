@@ -3,4 +3,4 @@ select
     first_name,
     last_name
 
-from analytics_ds_dev.bfrison_jaffle_shop.customers
+from jaffle_shop.customers

@@ -4,4 +4,4 @@ select
     order_date,
     status
 
-from analytics_ds_dev.bfrison_jaffle_shop.orders
+from jaffle_shop.orders

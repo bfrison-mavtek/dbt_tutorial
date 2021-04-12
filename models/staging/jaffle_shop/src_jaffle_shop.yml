@@ -1,0 +1,23 @@
+version: 2
+
+sources:
+  - name: jaffle_shop
+    description: uploaded csv files to complete the tutorial
+    database: blaise_dbt
+    tables:
+      - name: customers
+        description: Raw customers data.
+        columns:
+          - name: id
+            description: Primary key for customers
+            tests:
+              - unique
+              - not_null
+      - name: orders
+        description: Raw orders data.
+        columns:
+          - name: id
+            description: Primary key for orders.
+            tests:
+              - unique
+              - not_null
